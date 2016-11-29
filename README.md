@@ -18,7 +18,7 @@ Handbook No.1. (FMH-1 1995), issued by the National Oceanic and
 Atmospheric Administration (NOAA).  General information about the
 use and history of the METAR standard can be found at
 
-    http://www.ncdc.noaa.gov/oa/wdc/metar/
+    https://www.ncdc.noaa.gov/wdc/metar/
 
 This module extracts the data recorded in the main-body groups of
 reports that follow the WMO spec or the US conventions, except for
@@ -33,7 +33,7 @@ in international reports are accepted.
 Current and historical METAR data can be obtained from various places.
 The current METAR report for a given airport is available at the URL
 
-    http://weather.noaa.gov/pub/data/observations/metar/stations/<station>.TXT
+    http://tgftp.nws.noaa.gov/data/observations/metar/stations/<station>.TXT
 
 where <station> is the four-letter ICAO airport station code.  The
 accompanying script get_report.py will download and decode the
@@ -42,27 +42,26 @@ current report for any specified station.
 The METAR reports for all stations (worldwide) for any "cycle" (i.e., hour)
 in the last 24 hours are available in a single file at the URL
 
-   http://weather.noaa.gov/pub/data/observations/metar/cycles/<cycle>Z.TXT
+   http://tgftp.nws.noaa.gov/data/observations/metar/cycles<cycle>Z.TXT
 
 where <cycle> is a 2-digit cycle number (e.g., "00", "05" or "23").
 
 ## METAR specifications
-The Federal Meteorological Handbook No.1. (FMH-1 1995), which
+The Federal Meteorological Handbook No.1. (FMH-1 2005), which
 describes the U.S. standards, is available online at
 
-   http://www.ofcm.gov/fmh-1/fmh1.htm
+   http://www.ofcm.gov/publications/fmh/FMH1/FMH1.pdf
 
 The World Meteorological Organization (WMO) Manual on Codes, vol I.1,
-Part A (WMO-306 I.i.A) can be downloaded from site I use to distribute
-this package,
+Part A (WMO-306 I.i.A) can be downloaded from:
 
-   http://homepage.mac.com/wtpollard/Software/FileSharing4.html.
+   http://www.wmo.int/pages/prog/www/WMOCodes/WMO306_vI1/VolumeI.1.html
 
 
 Tom Pollard
 pollard@alum.mit.edu
 May 2, 2009
-
+(updated November 29, 2016)
 
 ## Installation
 If you're using the `anaconda` python distribution, you can create a new
