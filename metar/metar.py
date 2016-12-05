@@ -96,7 +96,7 @@ TIME_RE = re.compile(r"""^(?P<day>\d\d)
 MODIFIER_RE = re.compile(r"^(?P<mod>AUTO|FINO|NIL|TEST|CORR?|RTD|CC[A-G])\s+")
 
 WIND_RE = re.compile(r"""^(?P<dir>[\dO]{3}|[0O]|///|MMM|VRB)
-                          (?P<speed>P?[\dO]{2,3}|[0O]+|[/M]{2,3})
+                          (?P<speed>P?[\dO]{2,3}|[/M]{2,3})
                         (G(?P<gust>P?(\d{1,3}|[/M]{1,3})))?
                           (?P<units>KTS?|LT|K|T|KMH|MPS)?
                       (\s+(?P<varfrom>\d\d\d)V
